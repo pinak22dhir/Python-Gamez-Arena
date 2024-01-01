@@ -1,6 +1,6 @@
-## Python-Gamez-Arena
-Welcome to the thrilling world of Pythom Games Arena, where virtual realms and strategic prowess collide in an electrifying gaming experience like no other. In this dynamic multiplayer environment, players are immersed in a visually stunning arena where the boundaries between reality and fantasy blur.
+# Python-Gamez-Arena
 
+Welcome to the thrilling world of Pythom Games Arena, where virtual realms and strategic prowess collide in an electrifying gaming experience like no other. In this dynamic multiplayer environment, players are immersed in a visually stunning arena where the boundaries between reality and fantasy blur.
 
 Pythom Games Arena boasts a diverse array of game modes, each uniquely designed to test players' skills and teamwork. Whether you're engaged in heart-pounding battles, solving intricate puzzles, or navigating treacherous landscapes, every moment promises an adrenaline rush. The cutting-edge graphics and immersive soundscapes elevate the gaming experience, transporting players into a realm where every move is critical.
 
@@ -8,10 +8,14 @@ Choose your avatar from a plethora of customizable options, each with unique abi
 
 Pythom Games Arena is not just a game; it's a community. Connect with players from around the globe, share strategies, and participate in tournaments to prove your mettle. Regular updates and new challenges keep the excitement fresh, ensuring that every visit to the arena is a unique adventure.
 
-Are you ready to embark on a journey where skill, strategy, and camaraderie reign supreme? Join Pythom Games Arena and become a legend in the ever-evolving landscape of virtual competition. The arena awaits, and glory beckons!
+## Contributors
 
+A big shoutout to the contributors who have dedicated their time and expertise to make Pythom Games Arena a reality:
 
+- [pinak22dhir]
+- [pinak-dhir]
+- [JayArindam]
 
+Thank you for your valuable contributions! The arena awaits, and glory beckons!
 
-
-
+Are you ready to embark on a journey where skill, strategy, and camaraderie reign supreme? Join Pythom Games Arena and become a legend in the ever-evolving landscape of virtual competition.
