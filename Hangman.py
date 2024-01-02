@@ -1,6 +1,6 @@
 import random
-from words import word_list
 
+word_list = ["apple", "banana", "orange", "grape", "kiwi", "melon", "peach"]
 def get_word():
     word=random.choice(word_list)
     return word.upper()
