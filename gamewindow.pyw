@@ -2,15 +2,14 @@ from tkinter import *
 import tkvideo
 import os
 
-def calc():
-    os.startfile('main.pyw')
+def invaders():
+    os.startfile('games\\space_invaders.pyw')
 def about():
     os.startfile('about.pyw')
 def made():
-    os.startfile('madeby.pyw')
-def smthng():
-    os.startfile('main2.pyw')
-    dis1.destroy()
+    os.startfile('credits.pyw')
+def snake():
+    os.startfile('games\\snake.pyw')
 def smthng3():
     os.startfile('D:\\Home\\Desktop\\All Stuff\\Chitkara University\\projects\\final games project\\GAMES\\fairnsquare\\fairnsquare.exe')
 def smthng2():
@@ -34,7 +33,7 @@ dis1.resizable(False,False)
 
 my_newlabel2 = Label(dis1)
 my_newlabel2.pack()
-player = tkvideo.tkvideo("pf.webm", my_newlabel2, loop = 1, size = (1080,620))
+player = tkvideo.tkvideo("assets/launcher/pf.webm", my_newlabel2, loop = 1, size = (1080,620))
 player.play()
 
 Button(dis1,width=20,pady=2,text='Home',bg='#54e1fe',fg='#f8efda',border=0,command=hme).place(x=20,y=10)
@@ -43,8 +42,8 @@ Button(dis1,width=20,pady=2,text='About',bg='#54e1fe',fg='#f8efda',border=0,comm
 
 Button(dis1,width=20,pady=2,text='Made by',bg='#54e1fe',fg='#f8efda',border=0,command=made).place(x=900,y=550)
 
-Button(dis1,width=40,pady=2,text='Space Invaders',bg='#54e1fe',fg='#f8efda',border=0,command=calc).place(x=28,y=60)
-Button(dis1,width=40,pady=2,text='Snake',bg='#54e1fe',fg='#f8efda',border=0,command=smthng).place(x=28,y=90)
+Button(dis1,width=40,pady=2,text='Space Invaders',bg='#54e1fe',fg='#f8efda',border=0,command=invaders).place(x=28,y=60)
+Button(dis1,width=40,pady=2,text='Snake',bg='#54e1fe',fg='#f8efda',border=0,command=snake).place(x=28,y=90)
 Button(dis1,width=40,pady=2,text='Fair And Square',bg='#54e1fe',fg='#f8efda',border=0,command=smthng3).place(x=28,y=120)
 Button(dis1,width=40,pady=2,text='Balls',bg='#54e1fe',fg='#f8efda',border=0,command=smthng2).place(x=28,y=150)
 Button(dis1,width=40,pady=2,text='Jelly Drift',bg='#54e1fe',fg='#f8efda',border=0,command=smthng4).place(x=28,y=180)
