@@ -1,101 +1,62 @@
-from tkinter import *
+import tkinter as tk
 from tkinter import messagebox
 import tkvideo
 import ast
 
+# Constants
+USERNAME = 'username'
+PASSWORD = 'password'
+CONFIRM_PASSWORD = 'Confirm Password'
+DATA_FILE = 'datasheet.txt'
+
+def create_entry(disp, x, y, text):
+    """Create an Entry widget with specific properties and events."""
+    entry = tk.Entry(disp, width=30, fg='#f41d94', border=0, bg='white', font=('Microsoft YaHei UI Light',11))
+    entry.place(x=x, y=y)
+    entry.insert(0, text)
+    entry.bind('<FocusIn>', lambda e: entry.delete(0, 'end'))
+    entry.bind('<FocusOut>', lambda e: entry.insert(0, text) if entry.get() == '' else None)
+    return entry
+
 def sign_up():
-    disp=Toplevel()
+    """Create a sign up window."""
+    disp = tk.Toplevel()
     disp.title("Sign Up")
     disp.geometry('1080x620+300+200')
     disp.resizable(False,False)
 
-    my_newlabel = Label(disp)
+    my_newlabel = tk.Label(disp)
     my_newlabel.pack()
-    player = tkvideo.tkvideo("signup.mp4", my_newlabel, loop = 0, size = (1080,620))
+    player = tkvideo.tkvideo("assets/launcher/signup.mp4", my_newlabel, loop = 0, size = (1080,620))
     player.play()
 
-    ###################################################################################################################
+    user = create_entry(disp, 770, 200, USERNAME)
+    code = create_entry(disp, 770, 270, PASSWORD)
+    confirm = create_entry(disp, 770, 340, CONFIRM_PASSWORD)
+
     def signup():
-           username=user.get()
-           password=code.get() 
-           confirmm=confirm.get()
+        """Sign up function."""
+        username = user.get()
+        password = code.get() 
+        confirmm = confirm.get()
 
-           if password==confirmm:
-               try:
-                   file=open('datasheet.txt','r+')
-                   d=file.read()
-                   r=ast.literal_eval(d)
+        if password == confirmm:
+            try:
+                with open(DATA_FILE, 'r+') as file:
+                    data = ast.literal_eval(file.read())
+                    data.update({username: password})
+                    file.seek(0)
+                    file.write(str(data))
+                    file.truncate()
+                messagebox.showinfo('Signup', 'Successfully signed up')
+                disp.destroy()
+            except FileNotFoundError:
+                with open(DATA_FILE, 'w') as file:
+                    file.write(str({USERNAME: PASSWORD}))
+        else:
+            messagebox.showerror('Invalid', 'Both passwords should match')
 
-                   dict2={username:password}
-                   r.update(dict2)
-                   file.truncate(0)
-                   file.close()
-
-                   file=open('datasheet.txt','w')
-                   w=file.write(str(r))
-
-                   messagebox.showinfo('Signup','Successfully sin up')
-                   disp.destroy()
-
-               except:
-                   file=open('datasheet.txt',"w")
-                   pp=str({'username':'password'})
-                   file.write(pp)
-                   file.close()
-           else:
-               messagebox.showerror('Invalid','Both password should match')
-
-#####################################################################################################################
-
-    def sign():
-        disp.destroy()
-#################################################################################################################
-    def on_enter(e):
-        user.delete(0,'end')
-    def on_leave(e):
-        if user.get()=='':
-            user.insert(0,'Username')
-
-    user=Entry(disp,width=30,fg='#f41d94',border=0,bg='white',font=('Microsoft YaHei UI Light',11))
-    user.place(x=770,y=200)
-    user.insert(0,'username')
-    user.bind('<FocusIn>',on_enter)
-    user.bind('<FocusOut>',on_leave)
-
-    #######################################################################################################################
-
-    def on_enter(e):
-        code.delete(0,'end')
-    def on_leave(e):
-        if code.get()=='':
-            code.insert(0,'Password')
-
-    code=Entry(disp,width=30,fg='#f41d94',border=0,bg='white',font=('Microsoft YaHei UI Light',11))
-    code.place(x=770,y=270)
-    code.insert(0,'Password')
-    code.bind('<FocusIn>',on_enter)
-    code.bind('<FocusOut>',on_leave)
-
-    #########################################################################################################################
-
-    def on_enter(e):
-        confirm.delete(0,'end')
-    def on_leave(e):
-        if confirm.get()=='':
-            confirm.insert(0,'Confirm Password')
-
-    confirm=Entry(disp,width=30,fg='#f41d94',border=0,bg='white',font=('Microsoft YaHei UI Light',11))
-    confirm.place(x=770,y=340)
-    confirm.insert(0,'Confirm Password')
-    confirm.bind('<FocusIn>',on_enter)
-    confirm.bind('<FocusOut>',on_leave)
-
-    ###############################################################################################################################
-
-    Button(disp,width=35,pady=7,text='Sign Up',bg='#f41d94',fg='white',border=0,command=signup).place(x=765,y=410)
-
-    signin=Button(disp,width=10,text='Sign In',border=0,bg='#f41d94',cursor='hand2',fg='white',command=sign)
-    signin.place(x=930,y=465)
-
+    tk.Button(disp, width=35, pady=7, text='Sign Up', bg='#f41d94', fg='white', border=0, command=signup).place(x=765, y=410)
+    tk.Button(disp, width=10, text='Sign In', border=0, bg='#f41d94', cursor='hand2', fg='white', command=disp.destroy).place(x=930, y=465)
 
     disp.mainloop()
