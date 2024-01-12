@@ -34,7 +34,7 @@ def sign_up():
                    file=open('User_data\\datasheet.txt','w')
                    w=file.write(str(r))
 
-                   messagebox.showinfo('Signup','Successfully sin up')
+                   messagebox.showinfo('Signup','Successfully Sign-Up')
                    disp.destroy()
 
                except:
