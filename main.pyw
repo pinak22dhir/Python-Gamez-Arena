@@ -33,7 +33,7 @@ def signin():
         display.destroy()
         os.startfile('Python\\gamewindow.pyw')
     else:
-        messagebox.showerror('invalid','Invalid username of password')
+        messagebox.showerror('invalid','Invalid username or password')
 #########################################################################################################################################
 def on_enter(e):
     user.delete(0, 'end')
