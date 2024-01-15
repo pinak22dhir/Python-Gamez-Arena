@@ -32,6 +32,9 @@
   <td>
     Welcome to the thrilling world of Python Games Arena, where virtual realms and strategic prowess collide in an electrifying gaming experience like no other. In this dynamic multiplayer environment, players are immersed in a visually stunning arena where the boundaries between reality and fantasy blur.
   </td>
+  <td>
+     <img src='https://github.com/raysofani/test/assets/129651614/4b458530-72bd-4d57-85ab-a304becad73d' />
+  </td>
  </tr>
 </table>
 
@@ -54,6 +57,48 @@
   </td>
  </tr>
 </table>
+
+---
+:zap: 🎮
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src='https://github.com/raysofani/test/assets/129651614/50ecc380-d385-465c-8e7e-fe93e3d0c29f' alt='Balls' width='300rem' style='max-width:100%' />
+        <p style="font-size: 16px;"><strong>Balls</strong></p>
+      </td>
+      <td align="center">
+        <img src='https://github.com/raysofani/test/assets/129651614/3dd6d8e9-1deb-450f-9b57-47515b3e2e40)' alt='FairnSquare' width='300rem' style='max-width:100%' />
+        <p style="font-size: 16px;"><strong>FairnSquare</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src='https://github.com/raysofani/test/assets/129651614/870b861d-169a-4d21-a155-23a5cb91d71d)' alt='Karlson' width='300rem' style='max-width:100%' />
+        <p style="font-size: 16px;"><strong>Karlson</strong></p>
+      </td>
+      <td align="center">
+        <img src='https://github.com/raysofani/test/assets/129651614/b1dc36f4-95cc-4c8c-98e6-82815cea3762' alt='LastTrainHome' width='300rem' style='max-width:100%' />
+        <p style="font-size: 16px;"><strong>LastTrainHome</strong></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src='https://github.com/raysofani/test/assets/129651614/2e8e6334-87a4-4045-957b-b866d9eb7994' alt='Snake' width='300rem' style='max-width:100%' />
+        <p style="font-size: 16px;"><strong>Snake</strong></p>
+      </td>
+      <td align="center">
+        <img src='https://github.com/raysofani/test/assets/129651614/c6feb7ca-4409-4d9f-bfac-1ed0f81cbc72)' alt='TreeTeam' width='300rem' style='max-width:100%' />
+        <p style="font-size: 16px;"><strong>TreeTeam</strong></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
 
 ---
 
