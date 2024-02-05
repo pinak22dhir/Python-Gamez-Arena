@@ -69,13 +69,13 @@
         <p style="font-size: 16px;"><strong>Balls</strong></p>
       </td>
       <td align="center">
-        <img src='https://github.com/raysofani/test/assets/129651614/3dd6d8e9-1deb-450f-9b57-47515b3e2e40)' alt='FairnSquare' width='300rem' style='max-width:100%' />
+        <img src='https://github.com/raysofani/test/assets/129651614/3dd6d8e9-1deb-450f-9b57-47515b3e2e40' alt='FairnSquare' width='300rem' style='max-width:100%' />
         <p style="font-size: 16px;"><strong>FairnSquare</strong></p>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src='https://github.com/raysofani/test/assets/129651614/870b861d-169a-4d21-a155-23a5cb91d71d)' alt='Karlson' width='300rem' style='max-width:100%' />
+        <img src='https://github.com/raysofani/test/assets/129651614/870b861d-169a-4d21-a155-23a5cb91d71d' alt='Karlson' width='300rem' style='max-width:100%' />
         <p style="font-size: 16px;"><strong>Karlson</strong></p>
       </td>
       <td align="center">
@@ -89,7 +89,7 @@
         <p style="font-size: 16px;"><strong>Snake</strong></p>
       </td>
       <td align="center">
-        <img src='https://github.com/raysofani/test/assets/129651614/c6feb7ca-4409-4d9f-bfac-1ed0f81cbc72)' alt='TreeTeam' width='300rem' style='max-width:100%' />
+        <img src='https://github.com/raysofani/test/assets/129651614/c6feb7ca-4409-4d9f-bfac-1ed0f81cbc72' alt='TreeTeam' width='300rem' style='max-width:100%' />
         <p style="font-size: 16px;"><strong>TreeTeam</strong></p>
       </td>
     </tr>
