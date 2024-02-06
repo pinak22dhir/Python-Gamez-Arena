@@ -1,0 +1,45 @@
+# Flappy Bird Game Documentation
+
+## Introduction
+This documentation provides information on how to play the Flappy Bird game implemented in Python using the Pygame library. Flappy Bird is a side-scrolling game where the player controls a bird, attempting to fly between columns of green pipes without hitting them.
+
+## Installation
+1. Ensure you have Python installed on your system. You can download Python from the [official Python website](https://www.python.org/downloads/).
+2. Install the Pygame library using pip:
+   ```
+   pip install pygame
+   ```
+
+## How to Play
+1. **Starting the Game**
+   - Run the Python script containing the Flappy Bird game code.
+   - The game window will appear, titled "Flappy Bird".
+
+2. **Controls**
+   - Press the space bar to make the bird flap its wings and ascend.
+   - Release the space bar to allow the bird to descend due to gravity.
+
+3. **Objective**
+   - Navigate the bird through the gaps between the pipes without colliding with them.
+   - Each successful passage through the gap earns one point.
+
+4. **Game Over**
+   - The game ends if the bird collides with the top or bottom of the game window.
+   - The game also ends if the bird collides with any of the pipes.
+
+5. **Scoring**
+   - The score is displayed at the center of the game window.
+   - Each time the bird successfully passes through a gap between pipes, the score increases by one.
+
+6. **Restarting the Game**
+   - After the game ends, you can restart it by closing the game window and running the Python script again.
+
+## Code Overview
+- The game is implemented in Python using the Pygame library for graphics and input handling.
+- The bird is controlled by changing its vertical position based on user input (space bar) and gravity.
+- Pipes are randomly generated and move from right to left across the screen.
+- Collision detection is used to determine if the bird collides with the pipes or the boundaries of the game window.
+
+## Dependencies
+- Python 3.x
+- Pygame library
