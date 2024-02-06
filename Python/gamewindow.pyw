@@ -10,6 +10,8 @@ def Space_invaders():
 def snake():
     os.startfile('Games\\Snake\\main2.pyw')
     dis1.destroy()
+def Flappy_Bird():
+    os.startfile('Games\\Flappy_Bird\\flappybird.py')
 def fair_and_square():
     os.startfile('Games\\fairnsquare\\fairnsquare.exe')
 def balls():
