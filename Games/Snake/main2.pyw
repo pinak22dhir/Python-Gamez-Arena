@@ -85,6 +85,7 @@ class Game:
 
     def play_background_music(self):
         pygame.mixer.music.load('.\\Games\\Snake\\bg_music_1.mp3')
+
         pygame.mixer.music.play(-1, 0)
 
     def play_sound(self, sound_name):
@@ -92,6 +93,7 @@ class Game:
             sound = pygame.mixer.Sound(".\\Games\\Snake\\crash.mp3")
         elif sound_name == 'ding':
             sound = pygame.mixer.Sound(".\\Games\\Snake\\eat.mp3")
+
 
         pygame.mixer.Sound.play(sound)
         # pygame.mixer.music.stop()
@@ -103,10 +105,11 @@ class Game:
 
 
     def is_collision(self, x1, y1, x2, y2):
-        if x1 >= x2 and x1 < x2 + SIZE:
-            if y1 >= y2 and y1 < y2 + SIZE:
+        if x1 < x2 + SIZE and x1 + SIZE > x2:
+            if y1 < y2 + SIZE and y1 + SIZE > y2:
                 return True
         return False
+
 
     def render_background(self):
         bg = pygame.image.load(".\\Games\\Snake\\background.jpg")
@@ -125,13 +128,18 @@ class Game:
                 self.play_sound("ding")
                 self.snake.increase_length()
                 self.apple.move()
-        for i in range(3, self.snake.length):
+
+        # snake colliding with itself
+        for i in range(1, self.snake.length):
             if self.is_collision(self.snake.x[0], self.snake.y[0], self.snake.x[i], self.snake.y[i]):
                 self.play_sound('crash')
                 raise "Collision Occurred"
+
+        # snake hitting the boundary
         if not (0 <= self.snake.x[0] <= 1000 and 0 <= self.snake.y[0] <= 800):
             self.play_sound('crash')
-            raise "Hit the boundry error"
+            raise "Hit the boundary error"
+
 
     def display_score(self):
         font = pygame.font.SysFont('arial',30)
