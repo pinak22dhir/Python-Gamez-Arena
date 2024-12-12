@@ -1,0 +1,53 @@
+Tetris Game in Python
+🎮 Introduction
+Welcome to the classic Tetris game, built using Python and Tkinter! This game brings the nostalgia of the iconic Tetris puzzle to your screen, where you'll manipulate falling blocks (called Tetriminos) to clear rows and score points.
+
+Play the game, test your skills, and try to reach the highest score possible. Ready to take on the challenge? Let’s play!
+
+📸 Screenshots
+![Tetris Game Screenshot](screenshots/image.png)           
+![dedicated-buttons](image-1.png)<br>
+dedicated-buttons
+
+
+🚀 Features
+Simple Gameplay: Move and rotate falling blocks to complete horizontal lines.
+Game Over: The game ends when the blocks stack up to the top.
+High Score Tracking: Try to beat your best score with each play.
+Responsive Controls: Arrow keys to move and rotate blocks, easy-to-understand interface.
+🖥️ Prerequisites
+To play the game, you need Python installed on your machine. You’ll also need Tkinter, which is included with most Python installations by default.
+
+Python 3.x: Download Python
+Tkinter: If Tkinter is not installed, you can install it with:
+bash
+Copy code
+pip install tk
+🚀 How to Run
+Clone the Repository
+Start by cloning the repository to your local machine:
+
+bash
+```
+git clone https://github.com/your-username/tetris-game-python.git
+```
+Run the Game
+Navigate to the project folder and run the game:
+
+bash
+```
+cd tetris-game-python
+python tetris.py
+```
+The game window will open, and you can start playing!
+
+🎮 Gameplay Instructions
+Arrow keys:
+Up: Rotate the block
+Left: Move block left
+Right: Move block right
+Down: Move block down faster
+Goal: Clear lines by completing a full row with no gaps.
+Game Over: The game ends when the blocks reach the top of the screen.
+🛠️ How It Works
+This game uses Tkinter, the standard GUI library for Python, to create the game window, draw the game board, and handle user input. The blocks are represented as shapes that move down the screen, and you control their position and orientation using the keyboard.
